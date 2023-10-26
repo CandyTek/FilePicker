@@ -5,9 +5,9 @@ if(isRunAlone.toBoolean()){
 }
 
 android {
-    compileSdkVersion 32
+    compileSdkVersion 34
 
-
+    namespace "com.zhangteng.folderpicker"
 
     defaultConfig {
         if (isRunAlone.toBoolean()) {
@@ -55,6 +55,6 @@ dependencies {
 
     implementation project(':filepicker-searchfilelibrary')
     implementation project(':filepicker-common')
-    implementation 'com.github.DL-ZhangTeng:RequestPermission:1.2.+'
+    implementation "com.github.DL-ZhangTeng:RequestPermission:$requestPermissionVersion"
     implementation 'com.github.DL-ZhangTeng:Utils:1.0.+'
 }

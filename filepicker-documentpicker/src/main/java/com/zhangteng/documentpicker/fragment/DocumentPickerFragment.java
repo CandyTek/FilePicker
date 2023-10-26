@@ -96,7 +96,7 @@ public class DocumentPickerFragment extends Fragment {
         });
         mRecyclerViewImageList.setAdapter(documentPickerAdapter);
 
-        AndroidPermission androidPermission = new AndroidPermission.Buidler()
+        AndroidPermission androidPermission = new AndroidPermission.Builder()
                 .with(this)
                 .permission(Permission.READ_EXTERNAL_STORAGE,
                         Permission.WRITE_EXTERNAL_STORAGE)

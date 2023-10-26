@@ -39,9 +39,9 @@ public class FilePickerActivity extends AppCompatActivity {
         fragments.add(new DocumentPickerFragment());
         fragments.add(new FolderPickerFragment());
 
-        AndroidPermission androidPermission = new AndroidPermission.Buidler()
+        AndroidPermission androidPermission = new AndroidPermission.Builder()
                 .with(FilePickerActivity.this)
-                .permission(Permission.Group.STORAGE_R)
+                .permission(Permission.Group.STORAGE)
                 .callback(new Callback() {
                     @Override
                     public void success(Activity permissionActivity) {

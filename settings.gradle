@@ -1,1 +1,17 @@
+pluginManagement {
+	repositories {
+		google()
+		mavenCentral()
+		gradlePluginPortal()
+	}
+}
+dependencyResolutionManagement {
+	repositories {
+		google()
+		mavenCentral()
+		jcenter()
+		maven { url "https://jitpack.io" }
+	}
+}
+rootProject.name='FilePicker'
 include ':app', ':filepicker-searchfilelibrary', ':filepicker-videopicker', ':filepicker-audiopicker', ':filepicker-imagepicker', ':filepicker-documentpicker', ':filepicker-rarpicker', ':filepicker-folderpicker', ':filepicker-common'

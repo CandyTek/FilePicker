@@ -107,7 +107,7 @@ public class VideoPickerFragment extends Fragment {
         videoPickerAdapter.setOnItemClickListener(new VideoPickerAdapter.OnItemClickListener() {
             @Override
             public void onCameraClick(List<MediaEntity> selectVideo) {
-                AndroidPermission androidPermission = new AndroidPermission.Buidler()
+                AndroidPermission androidPermission = new AndroidPermission.Builder()
                         .with(VideoPickerFragment.this)
                         .permission(Permission.CAMERA,
                                 Permission.RECORD_AUDIO)
@@ -142,7 +142,7 @@ public class VideoPickerFragment extends Fragment {
         });
         mRecyclerViewVideoList.setAdapter(videoPickerAdapter);
 
-        AndroidPermission androidPermission = new AndroidPermission.Buidler()
+        AndroidPermission androidPermission = new AndroidPermission.Builder()
                 .with(this)
                 .permission(Permission.READ_EXTERNAL_STORAGE,
                         Permission.WRITE_EXTERNAL_STORAGE)

@@ -3,7 +3,7 @@ apply plugin: 'com.android.library'
 android {
     compileSdkVersion 32
 
-
+    namespace "com.zhangteng.searchfilelibrary"
 
     defaultConfig {
         minSdkVersion 21
